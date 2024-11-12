@@ -10,10 +10,7 @@
 
 def is_palindrome(msg: str)-> bool:
     msg = msg.lower().replace(" ", "")
-    msg2 = msg[::-1]
-    if msg == msg2:
-        return True
-    return False
+    return msg == msg[::-1]
 
 
 if __name__ == '__main__':

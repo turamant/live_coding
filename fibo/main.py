@@ -26,4 +26,4 @@ def fibonacci(n: int)-> int:
 
 
 if __name__ == '__main__':
-    print(fibonacci(5))
+    print(fibonacci(6))
