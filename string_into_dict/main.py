@@ -7,11 +7,11 @@
 #  результат должен быть {'h': 1, 'e': 1, 'l': 2, 'o': 1}.
 
 
-def string_to_dict(string: str)-> dict[str, int]:
-    string = string.replace(" ", "")
+def string_to_dict(msg: str)-> dict[str, int]:
+    msg = msg.replace(" ", "")
     result_dict: dict[str, int] = {}
 
-    for i in string:
+    for i in msg:
         result_dict[i] = result_dict.get(i, 0) + 1
  
     return result_dict
